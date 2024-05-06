@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
+  title: "Solana Code Book",
   description: "A VitePress Site",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -13,10 +13,10 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: "Examples",
+        text: "基础篇",
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          { text: "区块链基础概念介绍", link: "/basic/blockchain" },
+          { text: "本地环境搭建", link: "/basic/environment" },
         ],
       },
     ],

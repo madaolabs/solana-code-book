@@ -5,17 +5,19 @@ layout: home
 hero:
   name: "Solana Code Book"
   text: "Solana 入门教程"
-  tagline: 开启你的 web3 之旅
+  tagline: 开启你的 Solana 之旅
+  image:
+    src: /solana-sol-logo.svg
+    alt: Solana
   actions:
     - theme: brand
-      text: Get Started
+      text: 开始学习
       link: /basic/blockchain
-
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 深入简出
+    details: 深入简出介绍 Solana 合约开发
+  - title: 全栈开发
+    details: 内容覆盖 前端开发，合约开发，后端开发，涉及到开发，发布的各个流程
+  - title: 理论结合实践
+    details: 最终涉及多个 Demo 开发，学以致用所学到的内容
 ---

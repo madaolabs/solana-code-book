@@ -171,8 +171,7 @@ solana airdrop 2
 ## hello world 程序
 
 - [Native Solana 合约实现 - hello, World](./native-hello.md)
-<!-- - [Anchor 合约框架实现 - hello, World With PDA
-  ](./anchor_program_hello.md) -->
+- [Anchor 合约框架实现 - hello, World With PDA](./anchor-hello.md)
 
 ## 官方参考文档
 

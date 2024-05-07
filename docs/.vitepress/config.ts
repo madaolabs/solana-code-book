@@ -22,7 +22,8 @@ export default defineConfig({
         items: [
           { text: "区块链基础概念介绍", link: "/basic/blockchain" },
           { text: "本地环境搭建", link: "/basic/environment" },
-          { text: "原生Hello World", link: "/basic/native-hello" },
+          { text: "原生开发 Hello World", link: "/basic/native-hello" },
+          { text: "Anchor开发 Hello World", link: "/basic/anchor-hello" },
         ],
       },
     ],

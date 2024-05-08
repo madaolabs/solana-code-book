@@ -24,6 +24,7 @@ export default defineConfig({
           { text: "本地环境搭建", link: "/basic/environment" },
           { text: "原生开发 Hello World", link: "/basic/native-hello" },
           { text: "Anchor开发 Hello World", link: "/basic/anchor-hello" },
+          { text: "Solana 基础", link: "/basic/solana-basic" },
         ],
       },
     ],

@@ -64,4 +64,12 @@ Program Account 可以简单理解为在 Account 的 `data` 字段存储的是�
 #### Data Account
 
 `Program Account` 是无状态的。所以合约涉及的状态存储在另一个账户下，这就是`Data Account`，大致的关系图如下
+
 ![image](/data-account.svg "data-account")
+
+注意只有 `System Program` 可以创建账户。
+
+Program Account 创建 Data Account 的流程分为 2 步：
+
+1. `System Program` 创建账户，然后再把 `Data Account` 的 `owner` 设置为其他 `Program Account`
+2. 调用 `Program Account` ，初始化 `Data Account` 的数据

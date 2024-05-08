@@ -83,13 +83,13 @@ solana-test-validator
 我们现在准备好构建和部署我们的程序了。通过运行 `cargo build-sbf` 命令来构建程序。
 
 ```bash
-cargo build-sbf
+anchor build
 ```
 
-现在让我们部署我们的程序。部署从`cargo build-sbf`命令的输出`target/deploy/*.so`文件。
+现在让我们部署我们的程序。执行`anchor deploy`,如果需要指定合约时，使用`-p`参数指定。
 
 ```bash
-solana program deploy target/deploy/native_solana_hello.so
+anchor deploy -p anchor-solana-hello
 ```
 
 ## 6. 启动日志监控

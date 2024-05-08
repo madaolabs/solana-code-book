@@ -84,7 +84,7 @@ solana config get
 solana-test-validator
 ```
 
-:::tip
+::: tip
 这里一定要注意 ⚠️，`solana-test-validator` 这个命令启动的是 solana 的本地测试验证器。
 :::
 

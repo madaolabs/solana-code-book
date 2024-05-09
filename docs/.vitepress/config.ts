@@ -1,11 +1,15 @@
 import { defineConfig } from "vitepress";
+import { handleHeadMeta } from "./utils/handleHeadMeta";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Solana Code Book",
   lang: "zh-CN",
   head: [["link", { rel: "icon", href: "/solana-sol-logo.svg" }]],
-  description: "A VitePress Site",
+  description: "Solana 入门教程",
+  async transformHead(context) {
+    return handleHeadMeta(context);
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

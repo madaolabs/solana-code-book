@@ -33,6 +33,7 @@ export default defineConfig({
             items: [
               { text: "Solana 账户", link: "/basic/solana-basic-account" },
               { text: "Solana 交易", link: "/basic/solana-basic-tx" },
+              { text: "Solana 费用", link: "/basic/solana-basic-fee" },
             ],
           },
         ],

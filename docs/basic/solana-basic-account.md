@@ -1,10 +1,8 @@
-# Solana 基础概念
-
-## 账户
+# Solana 账户
 
 在 Solana 中，无论是钱包数据，合约代码还是合约数据等等，所有的数据存储都存储在账户中。每个账户存储上限是 **10** MB。每一个账户都有唯一的地址。
 
-### 账户的数据结构
+## 账户的数据结构
 
 下图展示了 AccountInfo 中的部分重要的字段，其他字段可以查看 [AccountInfo](https://github.com/solana-labs/solana/blob/27eff8408b7223bb3c4ab70523f8a8dca3ca6645/sdk/program/src/account_info.rs#L19)
 
@@ -23,11 +21,11 @@ Solana 中的每一个账户都包含以下字段:
 2. Sysvar Accounts
 3. Custom Programs
 
-### Native Programs
+## Native Programs
 
 Native Programs 包括多个账户，提供了 Solana 的核心功能，可以点击查看所有的[Native Programs](https://docs.solanalabs.com/runtime/programs)，在开发合约中通常用到 `System Program` 和 `BPF Loader`
 
-#### System Program
+### System Program
 
 `System Program` 提供了几种重要的功能，比如：
 
@@ -43,25 +41,25 @@ Native Programs 包括多个账户，提供了 Solana 的核心功能，可以�
 只有 owner 是`System Program`的账户才可以作为交易的 fee payers
 :::
 
-#### BPFLoader Program
+### BPFLoader Program
 
 BPF Loader 是所有 custom programs 账户的 owner，它的核心功能是部署，升级和执行 custom programs
 
-### Sysvar Accounts
+## Sysvar Accounts
 
 Sysvar Accounts 是一些特殊的账户，提供了链的状态数据，比如 `Clock`, `EpochSchedule` 等等
 
-### Custom Programs
+## Custom Programs
 
 Custom Programs 包含 `Program Account` 和 `Data Account` 两种类型的账户。
 
-#### Program Account
+### Program Account
 
 Program Account 可以简单理解为在 Account 的 `data` 字段存储的是合约代码，同时 `executable` 字段为 true，更详细的内容[查看](https://solana.com/zh/docs/core/accounts#program-account)
 
 ![image](/program-account-simple.svg "program-account-simple")
 
-#### Data Account
+### Data Account
 
 `Program Account` 是无状态的。所以合约涉及的状态存储在另一个账户下，这就是`Data Account`，大致的关系图如下
 

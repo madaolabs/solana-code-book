@@ -40,7 +40,7 @@ const instruction = ComputeBudgetProgram.setComputeUnitPrice({
 });
 ```
 
-:::INFO
+::: INFO
 如果用户给的优先费用大于真实使用的，大于的费用会返回给发起方。
 :::
 

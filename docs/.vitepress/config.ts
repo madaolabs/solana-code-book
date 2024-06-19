@@ -22,27 +22,48 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: "基础篇",
+        text: "扫盲基础篇",
+        collapsed: true,
         items: [
           { text: "区块链基础概念介绍", link: "/basic/blockchain" },
           { text: "本地环境搭建", link: "/basic/environment" },
-
+        ],
+      },
+      {
+        text: "Solana 基础",
+        collapsed: true,
+        items: [
+          { text: "Solana 账户", link: "/basic/solana-basic-account" },
+          { text: "Solana 交易", link: "/basic/solana-basic-tx" },
+          { text: "Solana 费用", link: "/basic/solana-basic-fee" },
+          { text: "Solana 合约", link: "/basic/solana-basic-program" },
+        ],
+      },
+      {
+        text: "Token",
+        collapsed: true,
+        items: [{ text: "Solana 代币", link: "/spl-token/information" }],
+      },
+      {
+        text: "NFT",
+      },
+      {
+        text: "合约开发篇",
+        collapsed: true,
+        items: [
           { text: "Anchor开发 Hello World", link: "/basic/anchor-hello" },
           {
-            text: "Solana 基础",
-            collapsed: false,
+            text: "SPL Token",
+            collapsed: true,
             items: [
-              { text: "Solana 账户", link: "/basic/solana-basic-account" },
-              { text: "Solana 交易", link: "/basic/solana-basic-tx" },
-              { text: "Solana 费用", link: "/basic/solana-basic-fee" },
-              { text: "Solana 合约", link: "/basic/solana-basic-program" },
+              { text: "Token Program", link: "/contract/spl-token/spl-token" },
             ],
           },
         ],
       },
       {
         text: "非必要篇",
-        collapsed: false,
+        collapsed: true,
         items: [{ text: "原生开发 Hello World", link: "/basic/native-hello" }],
       },
     ],

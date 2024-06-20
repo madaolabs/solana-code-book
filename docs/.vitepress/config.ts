@@ -42,7 +42,7 @@ export default defineConfig({
       {
         text: "Token",
         collapsed: true,
-        items: [{ text: "Solana 代币", link: "/spl-token/information" }],
+        items: [{ text: "Solana 发行代币", link: "/spl-token/create" }],
       },
       {
         text: "NFT",

@@ -54,13 +54,6 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: "Anchor开发 Hello World", link: "/basic/anchor-hello" },
-          {
-            text: "SPL Token",
-            collapsed: true,
-            items: [
-              { text: "Token Program", link: "/contract/spl-token/spl-token" },
-            ],
-          },
         ],
       },
       {

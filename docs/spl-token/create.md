@@ -52,8 +52,8 @@ pub struct Mint {
 }
 ```
 
-以上数据结构，没有包含名称，符号，头像等数据。这些数据要存在哪里呢？这就要提到[Metaplex](https://www.metaplex.com)。
-Metaplex 提供了 `Token Metadata` 的一套标准。将名称，符号，头像等数据存储在另一个账户 `Metadata Account`。
+以上数据结构，没有包含名称，符号，头像等元数据。这些数据要存在哪里呢？这就要提到[Metaplex](https://www.metaplex.com)。
+Metaplex 为`代币元数据`建立了基础设施标准。将元数据存储在另一个账户 `Metadata Account`。
 对 `Metadata Account` 的管理使用[Token Metadata Program](https://docs.metaplex.com/programs/token-metadata/overview)完成的。
 
 ![image](/token-metadata-account.png)

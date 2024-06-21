@@ -80,6 +80,7 @@ Metaplex 提供了 `Token Metadata` 的一套标准。将名称，符号，头�
 现在假设我们要发行一个 `Code` 代币。我们使用 Metaplex 的 JSSDK 进行 coding。
 
 ```typescript
+import bs58 from "bs58";
 import {
   percentAmount,
   generateSigner,
@@ -92,11 +93,12 @@ import {
 } from "@metaplex-foundation/mpl-token-metadata";
 import { createUmi } from "@metaplex-foundation/umi-bundle-defaults";
 import { mplCandyMachine } from "@metaplex-foundation/mpl-candy-machine";
-import secret from "./guideSecret.json";
+
+const secretKey = ""; // 钱包私钥
 
 const umi = createUmi("https://api.devnet.solana.com");
 
-const userWallet = umi.eddsa.createKeypairFromSecretKey(new Uint8Array(secret));
+const userWallet = umi.eddsa.createKeypairFromSecretKey(bs58.decode(secretKey));
 
 const userWalletSigner = createSignerFromKeypair(umi, userWallet);
 
@@ -106,7 +108,7 @@ const metadata = {
   uri: "", // 链下uri
 };
 
-const amount = 900_000_000_000000000n;
+const amount = 1_000_000_000000000n;
 const decimals = 9;
 
 const mint = generateSigner(umi);

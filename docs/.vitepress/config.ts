@@ -33,22 +33,24 @@ export default defineConfig({
         text: "Solana 基础",
         collapsed: true,
         items: [
-          { text: "Solana 账户", link: "/basic/solana-basic-account" },
-          { text: "Solana 交易", link: "/basic/solana-basic-tx" },
-          { text: "Solana 费用", link: "/basic/solana-basic-fee" },
-          { text: "Solana 合约", link: "/basic/solana-basic-program" },
+          { text: "账户 (Account)", link: "/basic/solana-basic-account" },
+          { text: "交易 (Transaction)", link: "/basic/solana-basic-tx" },
+          { text: "费用 (Fee)", link: "/basic/solana-basic-fee" },
+          { text: "合约 (Program)", link: "/basic/solana-basic-program" },
         ],
       },
       {
-        text: "Token",
+        text: "Solana 代币",
         collapsed: true,
-        items: [{ text: "Solana 发行代币", link: "/spl-token/create" }],
+        items: [{ text: "发行代币", link: "/spl-token/create" }],
       },
       {
-        text: "NFT",
+        text: "Solana NFT",
+        collapsed: true,
+        items: [{ text: "创建 NFT", link: "/nft/create" }],
       },
       {
-        text: "合约开发篇",
+        text: "实战篇",
         collapsed: true,
         items: [
           { text: "Anchor开发 Hello World", link: "/basic/anchor-hello" },

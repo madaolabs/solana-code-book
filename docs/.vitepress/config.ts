@@ -10,6 +10,11 @@ export default defineConfig({
   async transformHead(context) {
     return handleHeadMeta(context);
   },
+  // markdown: {
+  //   toc: {
+  //     level: [1, 2, 3],
+  //   },
+  // },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

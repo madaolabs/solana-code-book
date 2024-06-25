@@ -47,3 +47,14 @@ Metaplex 提供了针对 NFT 的技术实现提供了 3 种方式:
 - 当 `Collection` 设置为 {Key, Verified}, Key 存储一个地址，指向`集合NFT`, Verified 是 bool 值，表示是否经过验证
 
 更详细文档，请查看[文档](https://developers.metaplex.com/token-metadata/collections)
+
+## Metaplex Candy Machine
+
+Candy Machine 是一个在 Solana 链上铸造和发行的合约程序，把 NFT 的相关操作流程标准化。使用的主要流程是：
+
+1. 创建 Candy Machine
+2. 添加元素到 Candy Machine 中
+3. 铸造 Candy Machine 中的 NFT
+4. 铸造完所有 NFT 后删除 Candy Machine
+
+![image](/candy-machine.png)

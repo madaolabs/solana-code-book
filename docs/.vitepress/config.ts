@@ -5,7 +5,25 @@ import { handleHeadMeta } from "./utils/handleHeadMeta";
 export default defineConfig({
   title: "Solana Code Book",
   lang: "zh-CN",
-  head: [["link", { rel: "icon", href: "/solana-sol-logo.svg" }]],
+  head: [
+    ["link", { rel: "icon", href: "/solana-sol-logo.svg" }],
+    [
+      "script",
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-R9XMJYB91N",
+        async: "true",
+      },
+    ],
+    [
+      "script",
+      {},
+      `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-R9XMJYB91N');`,
+    ],
+  ],
   description: "Solana 入门教程",
   async transformHead(context) {
     return handleHeadMeta(context);

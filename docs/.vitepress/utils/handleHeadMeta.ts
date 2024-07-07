@@ -37,6 +37,13 @@ export function handleHeadMeta(context: TransformContext) {
       content: "https://learn-solana.dewall.xyz/solana-sol-logo.png",
     },
   ];
+  const twitterImageAlt: HeadConfig = [
+    "meta",
+    {
+      name: "twitter:image:alt",
+      content: "@0xCaptainApr",
+    },
+  ];
   const twitterDescription: HeadConfig = [
     "meta",
     {

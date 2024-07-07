@@ -8,7 +8,7 @@ export function handleHeadMeta(context: TransformContext) {
     "meta",
     {
       property: "og:url",
-      content: addBase(relativePath.slice(0, -3)) + ".html",
+      content: "https://learn-solana.dewall.xyz",
     },
   ];
   const ogTitle: HeadConfig = [
@@ -24,6 +24,13 @@ export function handleHeadMeta(context: TransformContext) {
     {
       property: "og:image",
       content: "https://learn-solana.dewall.xyz/solana-sol-logo.png",
+    },
+  ];
+  const ogSiteName: HeadConfig = [
+    "meta",
+    {
+      property: "og:site_name",
+      content: "https://learn-solana.dewall.xyz",
     },
   ];
   const twitterCard: HeadConfig = [

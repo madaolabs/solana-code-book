@@ -33,6 +33,13 @@ export function handleHeadMeta(context: TransformContext) {
       content: "https://learn-solana.dewall.xyz",
     },
   ];
+  const ogType: HeadConfig = [
+    "meta",
+    {
+      property: "og:type",
+      content: "website",
+    },
+  ];
   const twitterCard: HeadConfig = [
     "meta",
     { name: "twitter:card", content: "summary" },
@@ -78,6 +85,8 @@ export function handleHeadMeta(context: TransformContext) {
     ogTitle,
     ogDescription,
     ogImage,
+    ogSiteName,
+    ogType,
     twitterCard,
     twitterDescription,
     twitterImage,

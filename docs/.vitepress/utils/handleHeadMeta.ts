@@ -58,6 +58,13 @@ export function handleHeadMeta(context: TransformContext) {
       content: "@0xCaptainApr",
     },
   ];
+  const twitterTitle: HeadConfig = [
+    "meta",
+    {
+      name: "twitter:title",
+      content: "To Be Solana Developer",
+    },
+  ];
 
   const twitterHead: HeadConfig[] = [
     ogUrl,
@@ -69,6 +76,7 @@ export function handleHeadMeta(context: TransformContext) {
     twitterImage,
     twitterSite,
     twitterImageAlt,
+    twitterTitle,
   ];
 
   return twitterHead;

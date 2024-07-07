@@ -23,7 +23,7 @@ export function handleHeadMeta(context: TransformContext) {
     "meta",
     {
       property: "og:image",
-      content: "https://dewall.xyz/solana-sol-logo.png",
+      content: "https://learn-solana.dewall.xyz/solana-sol-logo.png",
     },
   ];
   const twitterCard: HeadConfig = [
@@ -34,7 +34,7 @@ export function handleHeadMeta(context: TransformContext) {
     "meta",
     {
       name: "twitter:image",
-      content: "https://dewall.xyz/solana-sol-logo.png",
+      content: "https://learn-solana.dewall.xyz/solana-sol-logo.png",
     },
   ];
   const twitterDescription: HeadConfig = [
@@ -42,6 +42,13 @@ export function handleHeadMeta(context: TransformContext) {
     {
       name: "twitter:description",
       content: description || context.description,
+    },
+  ];
+  const twitterSite: HeadConfig = [
+    "meta",
+    {
+      name: "twitter:site",
+      content: "@0xCaptainApr",
     },
   ];
 
@@ -53,6 +60,7 @@ export function handleHeadMeta(context: TransformContext) {
     twitterCard,
     twitterDescription,
     twitterImage,
+    twitterSite,
   ];
 
   return twitterHead;

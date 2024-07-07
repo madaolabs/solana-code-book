@@ -68,6 +68,7 @@ export function handleHeadMeta(context: TransformContext) {
     twitterDescription,
     twitterImage,
     twitterSite,
+    twitterImageAlt,
   ];
 
   return twitterHead;

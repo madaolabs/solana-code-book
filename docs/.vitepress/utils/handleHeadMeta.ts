@@ -23,7 +23,7 @@ export function handleHeadMeta(context: TransformContext) {
     "meta",
     {
       property: "og:image",
-      content: "https://dewall.xyz/dewall-favicon-color.svg",
+      content: "https://dewall.xyz/solana-sol-logo.png",
     },
   ];
   const twitterCard: HeadConfig = [
@@ -33,8 +33,8 @@ export function handleHeadMeta(context: TransformContext) {
   const twitterImage: HeadConfig = [
     "meta",
     {
-      name: "twitter:image:src",
-      content: "https://dewall.xyz/dewall-favicon-color.svg",
+      name: "twitter:image",
+      content: "https://dewall.xyz/solana-sol-logo.png",
     },
   ];
   const twitterDescription: HeadConfig = [

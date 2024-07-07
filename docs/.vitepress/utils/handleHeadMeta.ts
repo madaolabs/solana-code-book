@@ -13,7 +13,7 @@ export function handleHeadMeta(context: TransformContext) {
   ];
   const ogTitle: HeadConfig = [
     "meta",
-    { property: "og:title", content: title },
+    { property: "og:title", content: "Solana 开发教程" },
   ];
   const ogDescription: HeadConfig = [
     "meta",
@@ -76,7 +76,7 @@ export function handleHeadMeta(context: TransformContext) {
     "meta",
     {
       name: "twitter:title",
-      content: "To Be Solana Developer",
+      content: "Solana 开发教程",
     },
   ];
 

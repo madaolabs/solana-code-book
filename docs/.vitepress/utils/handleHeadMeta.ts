@@ -23,7 +23,7 @@ export function handleHeadMeta(context: TransformContext) {
     "meta",
     {
       property: "og:image",
-      content: "https://learn-solana.dewall.xyz/solana-sol-logo.png",
+      content: "https://learn-solana.dewall.xyz/solana-share-card.png",
     },
   ];
   const ogSiteName: HeadConfig = [
@@ -42,13 +42,13 @@ export function handleHeadMeta(context: TransformContext) {
   ];
   const twitterCard: HeadConfig = [
     "meta",
-    { name: "twitter:card", content: "summary" },
+    { name: "twitter:card", content: "summary_large_image" },
   ];
   const twitterImage: HeadConfig = [
     "meta",
     {
       name: "twitter:image",
-      content: "https://learn-solana.dewall.xyz/solana-sol-logo.png",
+      content: "https://learn-solana.dewall.xyz/solana-share-card.png",
     },
   ];
   const twitterImageAlt: HeadConfig = [

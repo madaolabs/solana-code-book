@@ -5,8 +5,27 @@ import { handleHeadMeta } from "./utils/handleHeadMeta";
 export default defineConfig({
   title: "Solana Code Book",
   lang: "zh-CN",
-  head: [["link", { rel: "icon", href: "/solana-sol-logo.svg" }]],
-  description: "Solana 入门教程",
+  head: [
+    ["link", { rel: "icon", href: "/solana-sol-logo.svg" }],
+    [
+      "script",
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-R9XMJYB91N",
+        async: "true",
+      },
+    ],
+    [
+      "script",
+      {},
+      `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-R9XMJYB91N');`,
+    ],
+  ],
+  description:
+    "这是一本入门 Solana 的教程，涉及到前端开发，合约开发模块，除了理论基础，还有 Demo 的讲解。",
   async transformHead(context) {
     return handleHeadMeta(context);
   },

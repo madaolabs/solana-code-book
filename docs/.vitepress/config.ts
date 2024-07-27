@@ -9,6 +9,13 @@ export default defineConfig({
     [
       "meta",
       {
+        name: "msvalidate.01",
+        content: "669C9D581BF5C4549E58BA5FDBAC073F",
+      },
+    ],
+    [
+      "meta",
+      {
         name: "keywords",
         content: "Solana 合约开发,Solana 入门教程,Solana Dapp",
       },

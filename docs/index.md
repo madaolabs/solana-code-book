@@ -4,7 +4,6 @@ layout: home
 
 hero:
   name: "Solana 合约开发"
-  keywords: "Solana 合约开发,Solana 入门教程,Solana Dapp"
   tagline: Solana 全栈工程师指南
   image:
     src: /solana-sol-logo.svg

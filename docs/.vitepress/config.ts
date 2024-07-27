@@ -6,6 +6,13 @@ export default defineConfig({
   title: "Solana Code Book",
   lang: "zh-CN",
   head: [
+    [
+      "meta",
+      {
+        name: "keywords",
+        content: "Solana 合约开发,Solana 入门教程,Solana Dapp",
+      },
+    ],
     ["link", { rel: "icon", href: "/solana-sol-logo.svg" }],
     [
       "script",
